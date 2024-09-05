@@ -1,0 +1,100 @@
+total number of widgets on flutter 
+The total number of widgets in Flutter is quite large and constantly growing. According to the Flutter documentation, there are over 150 widgets available in the Flutter framework. These widgets are used to build the UI (User Interface) of a Flutter app.
+
+Here are some categories and examples of widgets in Flutter:
+
+1. Basic Widgets:
+    - Text
+    - Image
+    - Icon
+    - Button
+    - TextField
+2. Layout Widgets:
+    - Row
+    - Column
+    - Stack
+    - ListView
+    - GridView
+3. Material Design Widgets:
+    - MaterialApp
+    - Scaffold
+    - AppBar
+    - Drawer
+    - ListTile
+4. Cupertino (iOS-style) Widgets:
+    - CupertinoApp
+    - CupertinoPage
+    - CupertinoButton
+    - CupertinoSlider
+5. Input Widgets:
+    - TextField
+    - TextFormField
+    - Checkbox
+    - Radio
+    - Slider
+6. Dialogs and Alerts:
+    - AlertDialog
+    - SimpleDialog
+    - BottomSheet
+7. Navigation and Routing:
+    - Navigator
+    - Route
+    - MaterialPageRoute
+8. Animation and Graphics:
+    - AnimatedContainer
+    - AnimatedImage
+    - CustomPaint
+9. Interaction Models:
+    - GestureDetector
+    - DragTarget
+    - LongPressDraggable
+the first most used widget on flutter and sample code
+The first most used widget in Flutter is the `MaterialApp` widget. It is the top-level widget for a Flutter application and is used to define the app's theme, title, and home page.
+
+Sample code:
+
+```
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'My First Flutter App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('My First Flutter App'),
+      ),
+      body: Center(
+        child: Text('Hello, World!'),
+      ),
+    );
+  }
+}
+```
+
+In this code:
+
+- `MaterialApp` is the top-level widget that wraps the entire app.
+- `MyHomePage` is the home page of the app, which is a `StatelessWidget`.
+- `Scaffold` is a widget that provides a basic material design layout structure.
+- `AppBar` is a widget that displays a material design app bar.
+- `Text` is a widget that displays text.
+
+This code creates a basic Flutter app with a material design theme, an app bar, and a home page that displays "Hello, World!".
+Note that this is not an exhaustive list, and new widgets are being added to Flutter with each release. Additionally, developers can also create custom widgets by combining existing widgets or creating their own from scratch.
